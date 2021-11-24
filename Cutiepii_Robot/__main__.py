@@ -97,15 +97,15 @@ from telethon import Button, events
 @telethn.on(events.NewMessage(pattern="/alive"))
 async def awake(event):
   CUTIEPII = event.sender.first_name
-  CUTIEPII = "**♡ I,m Cutiepii Robot 愛** \n\n"
+  CUTIEPII = "**♡ I,m Alisha Robot 愛** \n\n"
   CUTIEPII += "**♡ I'm Working With Awesome Speed**\n\n"
   CUTIEPII += "**♡ Cutiepii: LATEST Version**\n\n"
-  CUTIEPII += "**♡ My Creator:** [Rajkumar](t.me/Awesome_RJ)\n\n"
+  CUTIEPII += "**♡ My Creator:** [Aʙʜɪᴍᴀɴʏᴜ Sɪɴɢʜ RᴀɴᴀᴡᴀT](t.me/Itz_VeNom_xD)\n\n"
   CUTIEPII += "**♡ python-Telegram-Bot: 13.7**\n\n"
   CUTIEPII_BUTTON = [
       [
-          Button.url("🚑 Support", f"https://t.me/{SUPPORT_CHAT}"),
-          Button.url("📢 Updates", "https://t.me/Black_Knights_Union")
+          Button.url("🚑 Support", f"https://t.me/LoL_TuM_BiN"),
+          Button.url("📢 Updates", "https://t.me/Shayri_Music_Lovers")
       ]
   ]
   await telethn.send_file(
@@ -144,7 +144,7 @@ HELP_MSG = "Click the button below to get help manu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
     
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/2909a312d9438798d237a.png) 」────
+────「 [{}](https://telegra.ph/file/72d1c951142fbfb085afe.jpg) 」────
 *Hola! {},*
 *I am an Anime themed advance group management bot with a lot of Sexy Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -167,16 +167,16 @@ buttons = [
                     ],
                    [
                        InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
-                       InlineKeyboardButton(text="❔ Chit Chat", url="https://t.me/HindiKDrama"),
+                       InlineKeyboardButton(text="❔ Chit Chat", url="https://t.me/LoL_TuM_BiN"),
                        InlineKeyboardButton(text="[► Inline ◄]", switch_inline_query_current_chat=""),
                      ],
                     [                  
                        InlineKeyboardButton(
                              text="🚑 Support",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
+                             url=f"https://t.me/LoL_TuM_BiN"),
                        InlineKeyboardButton(
                              text="📢 Updates",
-                             url="https://t.me/Black_Knights_Union")
+                             url="https://t.me/Shayri_Music_Lovers")
                      ], 
     ]
 
@@ -315,11 +315,11 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="🚑 Support",
-                            url=f"https://telegram.dog/{SUPPORT_CHAT}",
+                            url=f"https://telegram.dog/LoL_TuM_BiN",
                         ),
                         InlineKeyboardButton(
                             text="📢 Updates",
-                            url="https://telegram.dog/Black_Knights_Union",
+                            url="https://telegram.dog/Shayri_Music_Lovers",
                         ),
                     ]
                 ]
@@ -447,7 +447,7 @@ def help_button(update, context):
 def cutiepii_callback_data(update, context):
     query = update.callback_query
     uptime = get_readable_time((time.time() - StartTime))
-    if query.data == "cutiepii_":
+    if query.data == "Alisha_":
         query.message.edit_text(
             text="""CallBackQueriesData Here""",
             parse_mode=ParseMode.MARKDOWN,
@@ -455,7 +455,7 @@ def cutiepii_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="[► Back ◄]", callback_data="cutiepii_back")
+                    InlineKeyboardButton(text="[► Back ◄]", callback_data="Alisha_back")
                  ]
                 ]
             ),
